@@ -1,58 +1,58 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
-//rutas para dispositivos 
+// rutas para dispositivos
 import HomePageDesk from './desktop/HomePageDesk';
 import HomePageTablet from './tablet/HomePageTablet';
 import HomePageMobile from './mobile/HomePageMobile';
 
-//rutas para destination mobile
+// rutas para destination mobile
 import DestinationAMobile from './mobile/DestinationMobile/DestinationAMobile';
 import DestinationBMobile from './mobile/DestinationMobile/DestinationBMobile';
 import DestinationCMobile from './mobile/DestinationMobile/DestinationCMobile';
 import DestinationDMobile from './mobile/DestinationMobile/DestinationDMobile';
 
-//rutas para destination tablet
+// rutas para destination tablet
 import DestinationATablet from './tablet/DestinationTablet/DestinationATablet';
 import DestinationBTablet from './tablet/DestinationTablet/DestinationBTablet';
 import DestinationCTablet from './tablet/DestinationTablet/DestinationCTablet';
 import DestinationDTablet from './tablet/DestinationTablet/DestinationDTablet';
 
-//rutas para destination desk
+// rutas para destination desk
 import DestinationADesk from './desktop/DestinationDesk/DestinationADesk';
 import DestinationBDesk from './desktop/DestinationDesk/DestinationBDesk';
 import DestinationCDesk from './desktop/DestinationDesk/DestinationCDesk';
 import DestinationDDesk from './desktop/DestinationDesk/DestinationDDesk';
 
-//rutas para crew mobile
+// rutas para crew mobile
 import CrewAMobile from './mobile/CrewMobile/CrewAMobile';
 import CrewBMobile from './mobile/CrewMobile/CrewBMobile';
 import CrewCMobile from './mobile/CrewMobile/CrewCMobile';
 import CrewDMobile from './mobile/CrewMobile/CrewDMobile';
 
-//rutas para crew tablet
+// rutas para crew tablet
 import CrewATablet from './tablet/CrewTablet/CrewATablet';
 import CrewBTablet from './tablet/CrewTablet/CrewBTablet';
 import CrewCTablet from './tablet/CrewTablet/CrewCTablet';
 import CrewDTablet from './tablet/CrewTablet/CrewDTablet';
 
-//rutas para crew desk
+// rutas para crew desk
 import CrewADesk from './desktop/CrewDesk/CrewADesk';
 import CrewBDesk from './desktop/CrewDesk/CrewBDesk';
 import CrewCDesk from './desktop/CrewDesk/CrewCDesk';
 import CrewDDesk from './desktop/CrewDesk/CrewDDesk';
 
-//rutas para technology mobile
+// rutas para technology mobile
 import TechnologyAMobile from './mobile/TechnologyMobile/TechnologyAMobile';
 import TechnologyBMobile from './mobile/TechnologyMobile/TechnologyBMobile';
 import TechnologyCMobile from './mobile/TechnologyMobile/TechnologyCMobile';
 
-//rutas para technology tablet
+// rutas para technology tablet
 import TechnologyATablet from './tablet/TechnologyTablet/TechnologyATablet';
 import TechnologyBTablet from './tablet/TechnologyTablet/TechnologyBTablet';
 import TechnologyCTablet from './tablet/TechnologyTablet/TechnologyCTablet';
 
-//rutas para technology desk
+// rutas para technology desk
 import TechnologyADesk from './desktop/TechnologyDesk/TechnologyADesk';
 import TechnologyBDesk from './desktop/TechnologyDesk/TechnologyBDesk';
 import TechnologyCDesk from './desktop/TechnologyDesk/TechnologyCDesk';
@@ -79,32 +79,44 @@ function Main() {
                 <Route
                     path="/"
                     element={
-                        isDesktop
-                            ? <HomePageDesk />
-                            : isTablet
-                                ? <HomePageTablet />
-                                : <HomePageMobile />
+                        isDesktop ? (
+                            <HomePageDesk />
+                        ) : isTablet ? (
+                            <HomePageTablet />
+                        ) : isMobile ? (
+                            <HomePageMobile />
+                        ) : (
+                            <div>Dispositivo no compatible</div>
+                        )
                     }
                 />
                 {/* Destination Routes */}
                 <Route
                     path="/destino"
                     element={
-                        isDesktop
-                            ? <Navigate to="/destinoD/a" />
-                            : isTablet
-                                ? <Navigate to="/destinoT/a" />
-                                : <Navigate to="/destinoM/a" />
+                        isDesktop ? (
+                            <Navigate to="/destinoD/a" />
+                        ) : isTablet ? (
+                            <Navigate to="/destinoT/a" />
+                        ) : isMobile ? (
+                            <Navigate to="/destinoM/a" />
+                        ) : (
+                            <div>Dispositivo no compatible</div>
+                        )
                     }
                 />
                 <Route
                     path="/destino/:subpage"
                     element={
-                        isDesktop
-                            ? <Navigate replace to="/destinoD/:subpage" />
-                            : isTablet
-                                ? <Navigate replace to="/destinoT/:subpage" />
-                                : <Navigate replace to="/destinoM/:subpage" />
+                        isDesktop ? (
+                            <Navigate replace to="/destinoD/:subpage" />
+                        ) : isTablet ? (
+                            <Navigate replace to="/destinoT/:subpage" />
+                        ) : isMobile ? (
+                            <Navigate replace to="/destinoM/:subpage" />
+                        ) : (
+                            <div>Dispositivo no compatible</div>
+                        )
                     }
                 />
                 <Route path="/destinoM/a" element={<DestinationAMobile />} />
@@ -124,21 +136,29 @@ function Main() {
                 <Route
                     path="/equipo"
                     element={
-                        isDesktop
-                            ? <Navigate to="/equipoD/a" />
-                            : isTablet
-                                ? <Navigate to="/equipoT/a" />
-                                : <Navigate to="/equipoM/a" />
+                        isDesktop ? (
+                            <Navigate to="/equipoD/a" />
+                        ) : isTablet ? (
+                            <Navigate to="/equipoT/a" />
+                        ) : isMobile ? (
+                            <Navigate to="/equipoM/a" />
+                        ) : (
+                            <div>Dispositivo no compatible</div>
+                        )
                     }
                 />
                 <Route
                     path="/equipo/:subpage"
                     element={
-                        isDesktop
-                            ? <Navigate replace to="/equipoD/:subpage" />
-                            : isTablet
-                                ? <Navigate replace to="/equipoT/:subpage" />
-                                : <Navigate replace to="/equipoM/:subpage" />
+                        isDesktop ? (
+                            <Navigate replace to="/equipoD/:subpage" />
+                        ) : isTablet ? (
+                            <Navigate replace to="/equipoT/:subpage" />
+                        ) : isMobile ? (
+                            <Navigate replace to="/equipoM/:subpage" />
+                        ) : (
+                            <div>Dispositivo no compatible</div>
+                        )
                     }
                 />
                 <Route path="/equipoM/a" element={<CrewAMobile />} />
@@ -158,21 +178,29 @@ function Main() {
                 <Route
                     path="/tecnologia"
                     element={
-                        isDesktop
-                            ? <Navigate to="/tecnologiaD/a" />
-                            : isTablet
-                                ? <Navigate to="/tecnologiaT/a" />
-                                : <Navigate to="/tecnologiaM/a" />
+                        isDesktop ? (
+                            <Navigate to="/tecnologiaD/a" />
+                        ) : isTablet ? (
+                            <Navigate to="/tecnologiaT/a" />
+                        ) : isMobile ? (
+                            <Navigate to="/tecnologiaM/a" />
+                        ) : (
+                            <div>Dispositivo no compatible</div>
+                        )
                     }
                 />
                 <Route
                     path="/tecnologia/:subpage"
                     element={
-                        isDesktop
-                            ? <Navigate replace to="/tecnologiaD/:subpage" />
-                            : isTablet
-                                ? <Navigate replace to="/tecnologiaT/:subpage" />
-                                : <Navigate replace to="/tecnologiaM/:subpage" />
+                        isDesktop ? (
+                            <Navigate replace to="/tecnologiaD/:subpage" />
+                        ) : isTablet ? (
+                            <Navigate replace to="/tecnologiaT/:subpage" />
+                        ) : isMobile ? (
+                            <Navigate replace to="/tecnologiaM/:subpage" />
+                        ) : (
+                            <div>Dispositivo no compatible</div>
+                        )
                     }
                 />
                 <Route path="/tecnologiaM/a" element={<TechnologyAMobile />} />
@@ -185,10 +213,7 @@ function Main() {
                 <Route path="/tecnologiaD/b" element={<TechnologyBDesk />} />
                 <Route path="/tecnologiaD/c" element={<TechnologyCDesk />} />
 
-                <Route
-                    path="*"
-                    element={<Navigate to="/" />}
-                />
+                <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </Router>
     );

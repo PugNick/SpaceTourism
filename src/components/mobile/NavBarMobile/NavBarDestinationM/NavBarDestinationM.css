@@ -1,0 +1,32 @@
+.navBarDM{
+    margin: 30px 20px 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.linksDestination {
+    color: #D0D6F9;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    font-weight: lighter;
+}
+
+.linksDestination.selected {
+    color: #FFF;
+}
+
+.linksDestination.selected::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: -5px;
+    bottom: -15px;
+    left: 0;
+}

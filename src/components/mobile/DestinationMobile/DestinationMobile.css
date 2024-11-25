@@ -1,0 +1,83 @@
+.containerDestionationM{
+    background-image: url(../../../../public//assets/imgs//destination//background-destination-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed; 
+    width: 100vw;
+    max-height: 100vh; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.mainContentDestinationM{
+    color: #fff;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.mainContentDestinationM p{
+    margin: 0;
+}
+
+.flexP{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-family: "Barlow Condensed", serif;
+}
+
+.flexP p{
+    font-weight: lighter;
+}
+
+#numDestination{
+    color: #727272;
+    font-weight: bold;
+}
+
+
+.imgContainerDM{
+    min-width: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainerDM img{
+    width: 45%;
+}
+
+.textContainerDM{
+    font-weight: lighter;
+}
+
+.textContainerDM h1{
+    font-size: 56px;
+    font-weight: lighter;
+    margin: 40px 0 0 0;
+    font-family: "Bellefair", serif;
+}
+
+.textContainerDM hr{
+    opacity: 15%;
+}
+
+.textContainerDM p{
+    color: #D0D6F9;
+    font-family: "Barlow", serif;
+}
+
+.distanceAndTime{
+    font-family: "Barlow Condensed", serif;
+}
+
+.textContainerDM h3{
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 12px 0 30px 0  ;
+    font-family: "Bellefair", serif;
+}

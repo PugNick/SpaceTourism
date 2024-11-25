@@ -1,0 +1,22 @@
+.navBarCD {
+    display: flex;
+    gap: 40px;
+    width: 100%; /* Ajusta según sea necesario */
+}
+
+.LinksCrewD {
+    display: block;
+    background-color: #727272;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s; /* Transición suave para cambios de color */
+}
+
+.LinksCrewD.selected {
+    background-color: #FFF; /* Fondo blanco para el enlace seleccionado */
+}
+
+.LinksCrewD:not(.selected):hover {
+    background-color: #A9A9A9; /* Gris más claro para el hover en enlaces no seleccionados */
+}

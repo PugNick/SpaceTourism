@@ -1,0 +1,90 @@
+.containerDestionationT{
+    background-image: url(../../../../public//assets//imgs//destination//background-destination-tablet.jpg);
+    background-size: cover; /* Escala la imagen para cubrir toda el área, manteniendo la proporción */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw; /* Asegura que ocupa todo el ancho de la ventana */
+    height: 100vh; /* Asegura que ocupa todo el alto de la ventana */
+    overflow-y: auto;    
+    overflow-x: hidden; /* Oculta cualquier contenido desbordado */
+    color: #fff;
+}
+
+.felxPT{
+    display: flex;
+    gap: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+#categoryDT, #numDT{
+    margin: 0;
+    font-size: 23px;
+}
+
+#numDT{
+    color: #727272;
+    font-weight: bold;
+}
+
+#categoryDT{
+    font-weight: lighter;
+}
+
+.mainContentDestinationT{
+    padding: 40px;
+} 
+
+.imgContainerDT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+    height: 384px;
+}
+
+.imgContainerDT img{
+    width: 300px;
+    height: 300px;
+}
+
+
+.textContainerDT{
+    text-align: center;
+    margin: 24px 90px;
+}
+
+.textContainerDT h2{
+    font-size: 90px;
+    margin: 0;
+    font-weight: lighter;
+    font-family: "Bellefair", serif;
+}
+
+.textContainerDT p{
+    color: #D0D6F9;
+    font-weight: lighter;
+    font-family: "Barlow", sans-serif;
+}
+
+.textContainerDT hr{
+    opacity: 15%;
+}
+
+
+.flexDateT{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+.flexDateT p{
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.flexDateT h3{
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 12px 0 0 0;
+    font-family: "Bellefair", serif;
+}

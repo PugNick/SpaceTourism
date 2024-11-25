@@ -1,0 +1,94 @@
+.HomePageBackD{
+    background-image: url(../../../public/assets//imgs//home//background-home-desktop.jpg);
+    background-size: cover; /* Escala la imagen para cubrir toda el área, manteniendo la proporción */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw; /* Asegura que ocupa todo el ancho de la ventana */
+    height: 100vh; /* Asegura que ocupa todo el alto de la ventana */
+    overflow-y: auto;    
+    overflow-x: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.mainContentD{
+    padding: 128px 0 128px 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.centerTextEnd{
+    display: flex;
+    align-items: end;
+}
+
+.textContainer{
+    width: 540px;
+    text-align: start;
+    padding-left: 50px;
+}
+
+.textContainer p{
+    margin: 0;
+    color: #D0D6F9;
+    font-weight: lighter;
+    font-family: "Barlow", sans-serif;
+}
+
+#travelDesk{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 25px;
+}
+
+.textContainer h1{
+    font-family: "Bellefair", serif;
+    font-size: 150px;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+
+.buttonExploreD{
+    width: 540px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 130px;
+}
+
+#exploreDesk {
+    background-color: #fff; /* Centro blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #000;
+    font-family: "Bellefair", serif;
+    font-size: 35px;
+    font-weight: lighter;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease; /* Suaviza los cambios si hay algo más */
+}
+
+#exploreDesk::before {
+    content: '';
+    position: absolute;
+    top: -64px; /* Centrar el halo */
+    left: -64px; /* Centrar el halo */
+    width: 400px; /* Tamaño del halo */
+    height: 400px; /* Tamaño del halo */
+    border-radius: 50%;
+    background-color: rgba(190, 190, 190, 0.2); /* Halo oscuro */
+    opacity: 0; /* Inicialmente invisible */
+    z-index: -1; /* Debajo del botón */
+    transition: opacity .5s ease; /* Efecto fade */
+}
+
+#exploreDesk:hover::before {
+    opacity: 1; /* Halo visible al pasar el mouse */
+}
+

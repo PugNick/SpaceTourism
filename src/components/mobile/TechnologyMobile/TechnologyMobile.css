@@ -1,0 +1,55 @@
+.ContainerTechM{
+    background-image: url(../../../../public//assets//imgs//technology//background-technology-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.flexP{
+    font-family: "Barlow Condensed", serif;
+}
+
+.numTechM{
+    color: #727272;
+}
+
+.mainContainerTechM{
+    color: #fff;
+    text-align: center;
+}
+
+.imgContainerTM{
+    min-width: 360px;
+    margin-bottom: 32px;
+}
+
+.imgContainerTM img{
+    width: 100%;
+}
+
+.mainContainerTechM h3, .mainContainerTechM h2{
+    font-weight: lighter;
+    font-family: "Bellefair", serif;
+}
+
+.mainContainerTechM h3{
+    color: #727272;
+}  
+
+.mainContainerTechM h2{
+    font-size: 35px;
+}
+
+
+.textContainerTM{
+    padding: 0 24px 24px 24px;
+}
+
+.textContainerTM p{
+    color: #D0D6F9;
+    font-weight: lighter;
+    font-family: "Barlow", serif;
+}

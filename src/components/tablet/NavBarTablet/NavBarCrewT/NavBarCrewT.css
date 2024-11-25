@@ -1,0 +1,20 @@
+.navBarCT{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.linksCrewT {
+    width: 12px; /* Ajusta según el tamaño deseado */
+    height: 12px; /* Ajusta según el tamaño deseado */
+    background-color: #979797; /* Color inicial de los puntos */
+    border-radius: 50%; /* Esto hace que el enlace sea un punto */
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transición suave para cambios de color */
+}
+
+.linksCrewT.selected {
+    background-color: white; /* Color blanco para el punto seleccionado */
+}

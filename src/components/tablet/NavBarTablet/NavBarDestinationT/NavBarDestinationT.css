@@ -1,0 +1,30 @@
+.navBarDT {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0 150px;
+}
+
+.linksDestinationT {
+    color: #D0D6F9;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0; /* Ajusta el padding según necesites */
+    font-weight: lighter;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.linksDestinationT.selected {
+    color: white;
+}
+
+.linksDestinationT.selected::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px; /* Ajusta la posición según tus necesidades */
+    left: 0;
+}

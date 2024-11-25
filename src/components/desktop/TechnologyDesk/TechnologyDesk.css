@@ -1,0 +1,113 @@
+.ContainerTechT{
+    background-image: url(../../../../public/assets/imgs/technology/background-technology-desktop.jpg);
+    background-size: cover; /* Escala la imagen para cubrir toda el área, manteniendo la proporción */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw; /* Asegura que ocupa todo el ancho de la ventana */
+    height: 100vh; /* Asegura que ocupa todo el alto de la ventana */
+    overflow-y: auto;    
+    overflow-x: hidden;
+    color: #fff;
+}
+
+.mainContainerTechD {
+    margin: 48px 0 0 165px;
+}
+
+.flexPDT{
+    display: flex;
+    gap: 20px;
+    font-family: "Barlow Condensed", serif;
+}
+
+.flexPDT p{
+    font-size: 23px;
+    margin: 0;
+}
+
+#numTechD{
+   color: #727272; 
+   font-weight: bold;
+}
+
+#PTD{
+    font-weight: lighter;
+}
+
+.flexTextImg{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.textContainerD{
+    display: flex;
+    align-items: center;
+}
+
+.textNavBarD{
+    display: flex;
+    align-items: center;
+}
+
+.textDates{
+    width: 491px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 64px;
+}
+
+.textDates h3{
+    color: #727272;
+    margin: 0;
+    font-family: "Bellefair", serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.textDates h2{
+    margin: 16px 0 24px 0;
+    font-family: "Bellefair", serif;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.textDates p{
+    margin: 0;
+    color: #D0D6F9;
+    font-family: "Barlow", sans-serif;
+}
+
+.imgContainerTD{
+    height: 734px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgLandscape{
+    display: none;
+}
+
+
+@media (max-width: 1349px) {
+    #imgPortrait{
+        display: none;
+    }
+
+    #imgLandscape{
+        display: block;
+    }
+
+    .flexTextImg{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .imgContainerTD{
+        height: 400px;
+    }
+  }

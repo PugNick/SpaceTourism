@@ -1,0 +1,61 @@
+.HomePageBackT {
+    background-image: url(../../../public/assets/imgs/home/background-home-tablet.jpg);
+    background-size: cover; /* Escala la imagen para cubrir toda el área, manteniendo la proporción */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw; /* Asegura que ocupa todo el ancho de la ventana */
+    height: 100vh; /* Asegura que ocupa todo el alto de la ventana */
+    overflow-y: auto;    
+    overflow-x: hidden; /* Oculta cualquier contenido desbordado */
+    color: #fff;
+    text-align: center;
+}
+
+.mainContentT{
+    padding: 128px 40px;
+}
+
+#travelT{
+    font-size: 25px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.mainContentT h1{
+    font-weight: lighter;
+    font-size: 120px;
+    margin: 30px 0;
+    font-family: "Bellefair", serif;
+    
+}
+
+#descriptionHomeT, #travelT{
+    color: #D0D6F9;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#descriptionHomeT{
+    padding: 0 90px;
+    font-family: "Barlow", sans-serif;
+}
+
+.containerExploreT{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#exploreT{
+    background-color: #fff;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    padding: 50px;
+    font-family: "Bellefair", serif;
+}

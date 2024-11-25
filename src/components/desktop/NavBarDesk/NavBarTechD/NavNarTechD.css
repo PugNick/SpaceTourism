@@ -1,0 +1,32 @@
+.navBarTD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    height: 304px;
+}
+
+.linksNavTechD {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #8b8b8b;
+    transition: .3s;
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: "Bellefair", serif;
+}
+
+.linksNavTechD:hover {
+    border: solid 1px #fff;
+}
+
+.linksNavTechD.selected {
+    background-color: #fff;
+    color: #000;
+}

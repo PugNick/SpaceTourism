@@ -1,0 +1,53 @@
+.HomePageBackM{
+    background-image: url(../../../public//assets//imgs//home//background-home-mobile.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;  
+    overflow: hidden;
+}
+
+.mainContent{
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+}
+
+.mainContent p{
+    margin: 0;
+    color: #D0D6F9;
+    font-weight: lighter;
+    font-family: "Barlow Condensed", serif;
+}
+
+.mainContent h1{
+    font-size: 90px;
+    margin: 15px 0;
+    font-weight: lighter;
+    font-family: "Bellefair", serif;
+}
+
+#infoM{
+    font-family: "Barlow", serif;
+}
+
+.buttonExploreM{
+    margin-top: 140px;
+}
+
+#exploreM{
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; 
+    height: 120px;
+    padding: 20px;
+    font-size: 22px;
+    color: black; 
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: "Bellefair", serif;
+}

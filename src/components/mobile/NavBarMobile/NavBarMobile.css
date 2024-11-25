@@ -1,0 +1,38 @@
+.navContainer nav{
+    display: flex;
+    flex-direction: column ;
+    padding: 32px 0 32px 32px;
+}
+
+.LinksM{
+    text-decoration: none;
+    color: #fff;
+    display: flex; 
+    gap: 15px;
+    position: relative;
+    padding-right: 20px;
+    font-family: "Barlow Condensed", serif;
+}
+
+.LinksM p{
+    margin: 10px 0;
+}
+
+.numLink{
+    font-weight: bold;
+}
+
+.nameLink{
+    font-weight: lighter;
+}
+
+
+.LinksM.active::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 20px;
+    width: 2px; 
+    background-color: #fff; 
+}

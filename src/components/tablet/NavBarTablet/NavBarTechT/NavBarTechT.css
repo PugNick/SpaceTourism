@@ -1,0 +1,29 @@
+.navBarTT {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent; 
+    margin-top: 32px;
+}
+
+.linksTechT {
+    width: 56px; 
+    height: 56px; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: lighter;
+    border: solid 1px #828282;
+    font-family: "Bellefair", serif;
+}
+
+.linksTechT.selected {
+    background-color: white; /* Color blanco para el enlace seleccionado */
+    color: black; /* Color del texto del enlace seleccionado */
+    font-weight: normal;
+    border: none;
+}
